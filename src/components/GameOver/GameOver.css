@@ -1,0 +1,49 @@
+.gameOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    line-height: 2;
+}
+
+.over {
+    color: var(--gms-color-5);
+}
+
+.gameOver > button {
+    margin-top: var(--margin-s);
+    background-color: var(--gms-color-1);
+    font-size: 1.5em;
+    outline: 5px solid var(--gms-color-3);
+    color: var(--gms-color-3);
+}
+
+@media screen and (max-width: 700px) {
+    .gameOver {
+        font-size: 1.8em;
+    }
+    
+    .over {
+        color: var(--gms-color-5);
+    }
+    
+    .gameOver > button {
+        margin-top: var(--margin-s);
+        background-color: var(--gms-color-1);
+        font-size: 1.5em;
+        outline: 5px solid var(--gms-color-3);
+        color: var(--gms-color-3);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .gameOver {
+        font-size: 1.7em;
+        line-height: 2;
+    }
+
+    .gameOver > button {
+        font-size: 1em;
+    }
+}

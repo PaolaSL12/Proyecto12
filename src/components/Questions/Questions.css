@@ -1,0 +1,154 @@
+.trivia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questionCard {
+    color: var(--gms-color-2);
+    width: 500px;
+    height: 620px;
+    outline: 5px solid var(--gms-color-2);
+    border-radius: var(--br);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 470px;
+    height: 300px;
+    font-size: 2em;
+}
+
+.options {
+    width: 470px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.option {
+    width: 470px;
+    height: 60px;
+    outline: 5px solid var(--gms-color-2);
+    border-radius: var(--br);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.correct {
+    outline: 5px solid var(--gms-color-3);
+    color: var(--gms-color-3);
+}
+
+.false {
+    outline: 5px solid var(--gms-color-5);
+    color: var(--gms-color-5);
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .questionCard {
+        width: 380px;
+        height: 500px;
+    }
+    
+    .question {
+        width: 380px;
+        height: 230px;
+        font-size: 1.1em;
+    }
+    
+    .options {
+        width: 375px;
+        height: 270px;
+    }
+    
+    .option {
+        font-size: 1em;
+        width: 350px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .questionCard {
+        width: 300px;
+        height: 500px;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    
+    .question {
+        width: 300px;
+        height: 220px;
+        font-size: 0.9em;
+    }
+    
+    .options {
+        width: 300px;
+        height: 280px;
+    }
+    
+    .option {
+        font-size: 0.9em;
+        width: 280px;
+        height: 45px;
+    }
+    .gameOver {
+        font-size: 1.7em;
+        line-height: 2;
+    }
+
+    .gameOver > button {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .questionCard {
+        width: 90%;
+        height: 350px;
+        justify-content: space-around;
+    }
+    
+    .question {
+        width: 90%;
+        height: 190px;
+        font-size: 0.8em;
+    }
+    
+    .options {
+        width: 90%;
+        height: 270px;
+    }
+    
+    .option {
+        font-size: 0.8em;
+        width: 250px;
+        height: 40px;
+        outline: 3px solid var(--gms-color-2);
+    }
+    .gameOver {
+        font-size: 1.6em;
+        line-height: 2;
+    }
+
+    .gameOver > button {
+        font-size: 0.9em;
+    }
+}

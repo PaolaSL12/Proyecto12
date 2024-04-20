@@ -1,0 +1,161 @@
+.wordle {
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--gms-color-4);
+}
+
+.wordleCard {
+    width: 600px;
+    height: 300px;
+    outline: 5px solid var(--gms-color-4);
+    border-radius: var(--br);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.word {
+    width: 550px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.letter {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+}
+
+.wordInput {
+    background-color: var(--gms-color-6);
+    color: var(--gms-color-1);
+    height: 100px;
+    width: 270px;
+    font-size: 3em;
+    padding: var(--padding-s);
+    border-radius: var(--br);
+}
+
+.solveButton {
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    border-radius: var(--br-s);
+    background-color: var(--gms-color-1);
+    outline: 3px solid var(--gms-color-2);
+    color: var(--gms-color-2);
+}
+
+.incorrectMessage {
+    color: var(--gms-color-5);
+}
+
+@media screen and (max-width: 700px) { 
+    .wordle {
+        width: 400px;
+        height: 450px;
+    }
+
+    .wordleCard {
+        width: 400px;
+        height: 250px;
+    }
+    
+    .word {
+        width: 380px;
+        height: 130px;
+    }
+    
+    .letter {
+        width: 70px;
+        height: 70px;
+        font-size: 4em;
+    }
+    
+    .wordInput {
+        height: 90px;
+        width: 270px;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .wordle {
+        width: 300px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .wordleCard {
+        width: 300px;
+        height: 230px;
+    }
+    
+    .word {
+        width: 290px;
+        height: 110px;
+    }
+    
+    .letter {
+        width: 70px;
+        height: 70px;
+        font-size: 3em;
+    }
+    
+    .wordInput {
+        height: 90px;
+        width: 190px;
+        font-size: 2em;
+    }
+
+    .textWordle {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wordle {
+        width: 90%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .wordleCard {
+        width: 90%;
+        height: 230px;
+    }
+    
+    .word {
+        width: 75%;
+        height: 110px;
+    }
+    
+    .letter {
+        font-size: 2em;
+    }
+    
+    .wordInput {
+        height: 60px;
+        width: 120px;
+        font-size: 2em;
+    }
+
+    .textWordle {
+        font-size: 0.8em;
+    }
+}
