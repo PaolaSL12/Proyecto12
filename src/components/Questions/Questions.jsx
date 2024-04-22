@@ -1,9 +1,9 @@
 import { useEffect, useReducer } from "react";
 import "./Questions.css";
-import { INITIAL_STATE, Reducer } from "../../../utils/trivia/reducer";
+import { INITIAL_STATE, Reducer } from "../../utils/trivia/reducer";
 import Score from "../Score/Score";
 import GameOver from "../GameOver/GameOver";
-import { handleRestart, selectOption } from "../../../utils/trivia/triviaFunctions";
+import { handleRestart, selectOption } from "../../utils/trivia/triviaFunctions";
 
 const Questions = () => {
   const [state, dispatch] = useReducer(Reducer, INITIAL_STATE);

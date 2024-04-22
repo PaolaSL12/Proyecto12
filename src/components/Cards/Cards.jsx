@@ -1,33 +1,16 @@
 import { Link } from "react-router-dom";
 import "./Cards.css";
+import Card from "../Card/Card";
 
 const Cards = () => {
   return (
     <div className="cards">
-      <Link to="/trivia">
-        <div className="card game1">
-          <h2>TRIVIA</h2>
-          <div className="divCardImg">
-            <img src="/assets/trivia.png" alt="trivia" />
-          </div>
-        </div>
-      </Link>
-      <Link to="/tresEnRaya">
-      <div className="card game2">
-        <h2>TRES EN RAYA</h2>
-        <div className="divCardImg">
-          <img src="/assets/tresEnRaya.png" alt="trivia" />
-        </div>
-      </div>
-      </Link>
-      <Link to="/wordle">
-      <div className="card game3">
-        <h2>WORDLE</h2>
-        <div className="divCardImg">
-          <img src="/assets/wordle.png" alt="trivia" />
-        </div>
-      </div>
-      </Link>
+      <Card to={"/trivia"} classes={"card game1"} src={"/assets/trivia.png"}>
+        TRIVIA
+      </Card>
+      <Card to={"/wordle"} classes={"card game2"} src={"/assets/wordle.png"}>
+        WORDLE
+      </Card>
     </div>
   );
 };

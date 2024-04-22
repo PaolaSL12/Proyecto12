@@ -1,10 +1,10 @@
 import { useEffect, useReducer, useRef } from "react";
-import { RandomGame } from "../../../utils/RandomGame";
+import { RandomGame } from "../../utils/RandomGame";
 import "./Words.css";
 import Score from "../Score/Score";
 import GameOver from "../GameOver/GameOver";
-import { INITIAL_STATE, Reducer } from "../../../utils/wordle/reducerW";
-import { handleRestart, handleSubmit } from "../../../utils/wordle/wordleFunctions";
+import { INITIAL_STATE, Reducer } from "../../utils/wordle/reducerW";
+import { handleRestart, handleSubmit } from "../../utils/wordle/wordleFunctions";
 
 const Words = () => {
   const [state, dispatch] = useReducer(Reducer, INITIAL_STATE);

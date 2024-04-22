@@ -6,7 +6,7 @@ export const selectOption = (dispatch, opcion, nextQuestion, quiz) => {
     }
     setTimeout(() => {
       next(dispatch);
-    }, 1000);
+    }, 700);
 };
 
 export const next = (dispatch) => {
